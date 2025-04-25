@@ -7,8 +7,12 @@ packer {
   }
 }
 
+variable "commit-hash" {
+  type = string
+}
+
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "learn-packer-linux-aws"
+  ami_name      = "learn-packer-linux-aws-${var.commit-hash}" 
   instance_type = "t2.micro"
   region        = "us-west-2"
   source_ami_filter {
