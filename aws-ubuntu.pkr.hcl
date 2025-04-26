@@ -36,6 +36,7 @@ build {
   provisioner "shell" {
     inline = [
       "sudo mkdir -p /packer",
+      "sudo chmod o+w /packer",
     ]
   }
 
