@@ -40,7 +40,7 @@ build {
   }
 
   provisioner "file" {
-    source = "startup.bash",
+    source = "startup.bash"
     destination = "/packer/startup.bash"
   }
 
