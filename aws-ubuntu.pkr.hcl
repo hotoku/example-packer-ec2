@@ -32,4 +32,22 @@ build {
   sources = [
     "source.amazon-ebs.ubuntu"
   ]
+
+  provisioner "shell" {
+    inline = [
+      "mkdir -p /packer",
+    ]
+  }
+
+  provisioner "file" {
+    source = "startup.bash",
+    destination = "/packer/startup.bash"
+  }
+
+  provisioner "shell" {
+    inline = [
+      "chmod +x /packer/startup.bash",
+      "/packer/startup.bash"
+    ]
+  }
 }
