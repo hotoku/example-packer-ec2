@@ -13,7 +13,7 @@ variable "commit-hash" {
 
 source "amazon-ebs" "ubuntu" {
   ami_name      = "learn-packer-linux-aws-${var.commit-hash}" 
-  instance_type = "t2.micro"
+  instance_type = "c3.2xlarge"
   region        = "ap-northeast-1"
   source_ami_filter {
     filters = {
