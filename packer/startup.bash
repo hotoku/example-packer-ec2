@@ -9,3 +9,7 @@ apt-get install -y zsh jq unzip sqlite3 cmake \
     libncursesw5-dev xz-utils tk-dev libxml2-dev \
     libxmlsec1-dev libffi-dev liblzma-dev \
     llvm direnv fzf
+
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+sudo apt-get install -y nodejs
+npm install -g yo generator-napi-module
