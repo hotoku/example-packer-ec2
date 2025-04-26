@@ -48,7 +48,7 @@ build {
   provisioner "shell" {
     inline = [
       "chmod +x /packer/startup.bash",
-      "/packer/startup.bash"
+      "sudo /packer/startup.bash"
     ]
   }
 }
