@@ -35,7 +35,7 @@ build {
 
   provisioner "shell" {
     inline = [
-      "mkdir -p /packer",
+      "sudo mkdir -p /packer",
     ]
   }
 
