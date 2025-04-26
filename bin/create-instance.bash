@@ -2,7 +2,7 @@
 
 
 aws ec2 run-instances \
-    --image-id "ami-014ff9dd161ad7ae6" \
+    --image-id "ami-0d0fe35156f0eba04" \
     --instance-type "c3.2xlarge" \
     --key-name "HFT" \
     --block-device-mappings '{"DeviceName":"/dev/sda1","Ebs":{"Encrypted":false,"DeleteOnTermination":true,"Iops":3000,"VolumeSize":200,"VolumeType":"gp3","Throughput":125}}' \
